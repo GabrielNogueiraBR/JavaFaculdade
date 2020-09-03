@@ -18,7 +18,7 @@ public class Carro {
     //Override é quando não queremos usar o toString original, ou seja estamos rescrevendo/sobrescrevendo o método toString
     @Override
     public String toString() {
-        return "Codigo do Carro=" + codigo + "\nDistância total=" + distanciaPercorridaEmMetros + "\nVelocidade atual=" + velocidadeKmPorHora;
+        return "\nCodigo do Carro=" + codigo + "\nDistância total=" + distanciaPercorridaEmMetros + "\nVelocidade atual=" + velocidadeKmPorHora;
     }
 
     
