@@ -2,6 +2,7 @@ package poo.teoria.aula01;
 
 public class Principal {
     
+public static void main(String[] args) {
     Bolo b1; // declaramos uma variável b1 do tipo Bolo. Só temos um objeto quando damos new Classe()
     Bolo b2; // esta variável é um ponteiro para o tipo (Classe) Bolo
     Bolo b3;
@@ -36,4 +37,7 @@ public class Principal {
     System.out.println("O bolo de " + b1.getSabor() + " foi feito.");
     System.out.println("O bolo de " + b3.getSabor() + " foi feito.");
     System.out.println("---------------------------------------------------");
+}
+
+    
 }
