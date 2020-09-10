@@ -12,26 +12,21 @@ public class Corrida {
 
         double distanciaPistaMetros = 10000;
                 
-        while(true){
+        while(c1.distanciaPercorridaEmMetros < distanciaPistaMetros && c2.distanciaPercorridaEmMetros < distanciaPistaMetros){
 
             c1.velocidadeKmPorHora = Math.random()*200;
             c2.velocidadeKmPorHora = Math.random()*200;
-            
-                        
 
             c1.mover(1);
             c2.mover(1);
+        }
 
-            if(c1.distanciaPercorridaEmMetros >= distanciaPistaMetros){
-                System.out.println("\nO carro vencedor foi o Carro 1");
-                break;
-            }          
-            
-            else if(c2.distanciaPercorridaEmMetros >= distanciaPistaMetros){
-                System.out.println("\nO carro vencedor foi o Carro 2");
-                break;
-            }
-
+        if(c1.distanciaPercorridaEmMetros > c2.distanciaPercorridaEmMetros){
+            System.out.println("\nO carro vencedor foi o Carro 1");
+        }          
+        
+        else{
+            System.out.println("\nO carro vencedor foi o Carro 2");
         }
         
 
