@@ -6,22 +6,21 @@ public class Corrida {
         Carro c1 = new Carro();
         Carro c2 = new Carro();
 
-        c1.codigo = 1;
-        c2.codigo = 2;
-
+        c1.setCodigo(1);
+        c2.setCodigo(2);
 
         double distanciaPistaMetros = 10000;
                 
-        while(c1.distanciaPercorridaEmMetros < distanciaPistaMetros && c2.distanciaPercorridaEmMetros < distanciaPistaMetros){
+        while(c1.getDistanciaPercorridaEmMetros() < distanciaPistaMetros && c2.getDistanciaPercorridaEmMetros() < distanciaPistaMetros){
 
-            c1.velocidadeKmPorHora = Math.random()*200;
-            c2.velocidadeKmPorHora = Math.random()*200;
+            c1.setVelocidadeKmPorHora(Math.random()*200);
+            c2.setVelocidadeKmPorHora(Math.random()*200);
 
             c1.mover(1);
             c2.mover(1);
         }
 
-        if(c1.distanciaPercorridaEmMetros > c2.distanciaPercorridaEmMetros){
+        if(c1.getDistanciaPercorridaEmMetros() > c2.getDistanciaPercorridaEmMetros()){
             System.out.println("\nO carro vencedor foi o Carro 1");
         }          
         
