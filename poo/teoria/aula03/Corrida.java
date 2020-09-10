@@ -28,14 +28,7 @@ public class Corrida {
             System.out.println("\nO carro vencedor foi o Carro 2");
         }
         
-
         System.out.println(c1);
         System.out.println(c2);
-
     }
-
-
-   
-
-
 }

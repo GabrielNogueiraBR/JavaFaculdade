@@ -6,7 +6,6 @@ public class Carro {
     private double velocidadeKmPorHora;
     private double distanciaPercorridaEmMetros;
     
-
     //Criação do metodo de movimento
     public double mover(int segundos){
         double dist = (this.velocidadeKmPorHora/3.6) * (segundos);
@@ -14,14 +13,11 @@ public class Carro {
         return dist;
     }
 
-
-
     //Override é quando não queremos usar o toString original, ou seja estamos rescrevendo/sobrescrevendo o método toString
     @Override
     public String toString() {
         return "\nCodigo do Carro=" + codigo + "\nDistância total=" + distanciaPercorridaEmMetros + "\nVelocidade atual=" + velocidadeKmPorHora;
     }
-
 
     //Getter de distancia percorrida em metros
     public double getDistanciaPercorridaEmMetros() {
@@ -49,10 +45,4 @@ public class Carro {
     public void setVelocidadeKmPorHora(double velocidadeKmPorHora) {
         this.velocidadeKmPorHora = velocidadeKmPorHora;
     }
-
-    
-    
-    
-
-    
 }
