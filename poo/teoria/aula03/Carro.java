@@ -28,7 +28,7 @@ public class Carro {
         
         if(tanque > 0){
             double dist = (this.velocidadeKmPorHora/3.6) * (segundos);
-            this.tanque -= (dist*0.001) * consumoEmKmPorLitros;
+            this.tanque -= (dist*0.001) * (1/consumoEmKmPorLitros);
             this.distanciaPercorridaEmMetros += dist;
         return dist;
         }
