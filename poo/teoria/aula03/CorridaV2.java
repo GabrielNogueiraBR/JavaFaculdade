@@ -22,6 +22,8 @@ public class CorridaV2 {
 
             Carro aux = new Carro();
             aux.setCodigo(i+1);
+            aux.abastecer( ((Math.random() * (50 - 5)) + 5)) ;
+            aux.setConsumo(((Math.random() * (10 - 5)) + 5));
             listaCarros.add(aux);
 
         }
